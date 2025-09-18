@@ -61,7 +61,7 @@ Nonostante ci siano **4 classi note**, l’**Elbow Method** suggerisce che il mi
 ![Elbow Method](images/elbow_method.png)
 
 #### Popolazione di Leptodactylidae distaccata
-Nell'immagine è evidente una porzione della popolazione di Leptodactylidae (in alto a destra) distaccata da quella principale (a sinistra). Le feature di queste due porzioni sono significativamente diverse, come emerge dalla distanza nello spazio tridimensionale del grafico.
+Nell'immagine è evidente una porzione della popolazione di Leptodactylidae (in alto a sinistra) distaccata da quella principale (a destra). Le feature di queste due porzioni sono significativamente diverse, come emerge dalla distanza nello spazio tridimensionale del grafico.
 ![PCA 3D - 4 cluster](images/pca_distribution.png)
 
 #### PCA 3D con 4 cluster
