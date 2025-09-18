@@ -8,7 +8,7 @@ L'obiettivo è confrontare i cluster generati dall'algoritmo con le classi reali
 ## 📊 Dataset
 
 - Ogni **rana** è descritta da **22 feature** quantitative.  
-- Ci sono **4 classi di rane** conosciute nel dataset (Family).  
+- Ci sono **4 classi di rane** conosciute nel dataset (Family), queste sono Leptodactylidae, Hylidae, Bufonidae e Dendrobatidae.
 - Le feature sono state normalizzate/standardizzate prima del clustering.
 - [https://archive.ics.uci.edu/dataset/406/anuran+calls+mfccs](Il dataset usato).
 
@@ -46,10 +46,10 @@ Nonostante ci siano **4 classi note**, l’**Elbow Method** suggerisce che il mi
 ### 💡 Logica del passaggio
 
 - Con **4 cluster**:
-  - Alcune popolazioni di leptociatidi non vengono completamente separate.  
+  - Alcune popolazioni di Leptodactylidae non vengono completamente separate.  
   - I punti si sovrappongono in modo che alcuni cluster risultino meno definiti.
 - Con **5 cluster**:
-  - Si separa una porzione significativa dei leptociatidi in un cluster a sé.  
+  - Si separa una porzione significativa dei Leptodactylidae in un cluster a sé.  
   - Gli altri cluster restano coerenti con le classi conosciute.  
 - Con **6 cluster** (opzionale da osservare):
   - Un cluster chiaro viene diviso in due, rendendo la segmentazione meno interpretabile.  
@@ -65,6 +65,8 @@ Nonostante ci siano **4 classi note**, l’**Elbow Method** suggerisce che il mi
 
 #### PCA 3D con 5 cluster
 ![PCA 3D - 5 cluster](images/pca_5_cluster.png)
+
+Per maggiore chiarezza vè possibile visitare il sito [https://kmeans-pca-visualization.streamlit.app/](https://kmeans-pca-visualization.streamlit.app/), sono presenti i grafici interattivi.
 
 ## 🖥️ Contenuto della repository
 
