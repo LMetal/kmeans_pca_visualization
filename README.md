@@ -42,7 +42,8 @@ L'obiettivo è confrontare i cluster generati dall'algoritmo con le classi reali
 
 ## 🖥️ Contenuto della repository
 
-- `app.py` → App Streamlit interattiva con toggle tra colorazione per Family o per Cluster.  
+- `pca_kmeans.py` → App Streamlit interattiva con possibilità di esplorare i risultati di 4, 5 e 6 cluster.
+- `pca_results_6cl.pkl` → Risultati PCA + KMeans per **6 cluster**.   
 - `pca_results_5cl.pkl` → Risultati PCA + KMeans per **5 cluster**.  
 - `pca_results_4cl.pkl` → Risultati PCA + KMeans per **4 cluster**.  
 - `requirements.txt` → Librerie necessarie per eseguire l’app.
