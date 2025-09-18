@@ -10,6 +10,7 @@ L'obiettivo è confrontare i cluster generati dall'algoritmo con le classi reali
 - Ogni **rana** è descritta da **22 feature** quantitative.  
 - Ci sono **4 classi di rane** conosciute nel dataset (Family).  
 - Le feature sono state normalizzate/standardizzate prima del clustering.
+- [https://archive.ics.uci.edu/dataset/406/anuran+calls+mfccs](Il dataset usato).
 
 ---
 
@@ -55,11 +56,3 @@ I grafici sono disponibili direttamente online senza download:
 
 È possibile osservare come cambia il clustering con **4, 5 o 6 cluster**.
 
----
-
-## 🖥️ Come usare l’app localmente
-
-1. Clonare la repository:
-   ```bash
-   git clone https://github.com/tuo-username/nome-repo.git
-   cd nome-repo
