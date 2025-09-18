@@ -8,7 +8,7 @@ L'obiettivo è confrontare i cluster generati dall'algoritmo con le classi reali
 ## 📊 Dataset
 
 - Ogni **rana** è descritta da **22 feature** quantitative.  
-- Ci sono **4 classi di rane** conosciute nel dataset (Family).  
+- Ci sono **4 classi di rane** conosciute nel dataset (Family), queste sono Leptodactylidae, Hylidae, Bufonidae e Dendrobatidae.
 - Le feature sono state normalizzate/standardizzate prima del clustering.
 - [https://archive.ics.uci.edu/dataset/406/anuran+calls+mfccs](Il dataset usato).
 
