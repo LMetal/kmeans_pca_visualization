@@ -46,10 +46,10 @@ Nonostante ci siano **4 classi note**, l’**Elbow Method** suggerisce che il mi
 ### 💡 Logica del passaggio
 
 - Con **4 cluster**:
-  - Alcune popolazioni di leptociatidi non vengono completamente separate.  
+  - Alcune popolazioni di Leptodactylidae non vengono completamente separate.  
   - I punti si sovrappongono in modo che alcuni cluster risultino meno definiti.
 - Con **5 cluster**:
-  - Si separa una porzione significativa dei leptociatidi in un cluster a sé.  
+  - Si separa una porzione significativa dei Leptodactylidae in un cluster a sé.  
   - Gli altri cluster restano coerenti con le classi conosciute.  
 - Con **6 cluster** (opzionale da osservare):
   - Un cluster chiaro viene diviso in due, rendendo la segmentazione meno interpretabile.  
