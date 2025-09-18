@@ -71,7 +71,8 @@ Nell'immagine è evidente una porzione della popolazione di Leptodactylidae (in 
 ![PCA 3D - 5 cluster](images/pca_5_cluster.png)
 
 Con 5 cluster la porzione di Leptodactylidae separata costituisce un nuovo cluster.
-Per maggiore chiarezza vè possibile visitare il sito [https://kmeans-pca-visualization.streamlit.app/](https://kmeans-pca-visualization.streamlit.app/), sono presenti i grafici interattivi.
+
+Per maggiore chiarezza è possibile visitare il sito [https://kmeans-pca-visualization.streamlit.app/](https://kmeans-pca-visualization.streamlit.app/), sono presenti i grafici interattivi.
 
 ## 🖥️ Contenuto della repository
 
