@@ -66,6 +66,8 @@ Nonostante ci siano **4 classi note**, l’**Elbow Method** suggerisce che il mi
 #### PCA 3D con 5 cluster
 ![PCA 3D - 5 cluster](images/pca_5_cluster.png)
 
+Per maggiore chiarezza vè possibile visitare il sito [https://kmeans-pca-visualization.streamlit.app/](https://kmeans-pca-visualization.streamlit.app/), sono presenti i grafici interattivi.
+
 ## 🖥️ Contenuto della repository
 
 - `pca_kmeans.py` → App Streamlit interattiva con possibilità di esplorare i risultati di 4, 5 e 6 cluster.
