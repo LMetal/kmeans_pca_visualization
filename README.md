@@ -34,11 +34,37 @@ L'obiettivo è confrontare i cluster generati dall'algoritmo con le classi reali
 
 - È stato usato **l’Elbow Method** per identificare il numero ottimale di cluster.  
 - Il miglior risultato è stato ottenuto con **5 cluster**, nonostante ci siano 4 classi:  
-  - Nel grafico 3D si vede che una porzione della popolazione di leptociatidi forma un cluster a sé.  
-  - Con **6 cluster**, un cluster evidente viene diviso in due, rendendo il risultato meno interpretabile.  
 - La quarta classe **Bufonidae** non crea un cluster proprio, a causa della **disparità nella dimensione della popolazione** e della **similarità con altre classi**.
 
 ---
+
+## 🔄 Passaggio da 4 a 5 cluster
+
+Durante l’analisi del dataset, è stato necessario valutare il numero ottimale di cluster da usare con KMeans.  
+Nonostante ci siano **4 classi note**, l’**Elbow Method** suggerisce che il miglior compromesso sia **5 cluster**.  
+
+### 💡 Logica del passaggio
+
+- Con **4 cluster**:
+  - Alcune popolazioni di leptociatidi non vengono completamente separate.  
+  - I punti si sovrappongono in modo che alcuni cluster risultino meno definiti.
+- Con **5 cluster**:
+  - Si separa una porzione significativa dei leptociatidi in un cluster a sé.  
+  - Gli altri cluster restano coerenti con le classi conosciute.  
+- Con **6 cluster** (opzionale da osservare):
+  - Un cluster chiaro viene diviso in due, rendendo la segmentazione meno interpretabile.  
+- La classe **Bufonidae** non genera un cluster proprio a causa della **disparità di popolazione e della somiglianza con altre classi**.
+
+### 📊 Visualizzazioni
+
+#### Elbow Method
+![Elbow Method](images/elbow_method.png)
+
+#### PCA 3D con 4 cluster
+![PCA 3D - 4 cluster](images/pca_4_cluster.png)
+
+#### PCA 3D con 5 cluster
+![PCA 3D - 5 cluster](images/pca_5_cluster.png)
 
 ## 🖥️ Contenuto della repository
 
