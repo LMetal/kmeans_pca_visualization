@@ -17,7 +17,6 @@ show_centroids = st.sidebar.checkbox("Mostra centroidi", value=True)
 point_size = st.sidebar.slider("Dimensione punti", 3, 12, 6)
 centroid_size = st.sidebar.slider("Dimensione centroidi", 8, 20, 14)
 legend_font_size = st.sidebar.slider("Dimensione legenda", 12, 30, 18)
-color_by_depth = st.sidebar.checkbox("Colore in base alla profondità (z)", value=False)
 
 # --- Carica i dati dal pickle scelto ---
 with open(pickle_choice, "rb") as f:
@@ -40,9 +39,6 @@ def common_legend_layout(fig):
             y=1.1,
             font=dict(size=legend_font_size),
             itemsizing="constant"
-        ),
-        scene=dict(
-            camera=dict(projection=dict(type="perspective"))  # 🔑 prospettiva realistica
         )
     )
     return fig
@@ -57,12 +53,7 @@ for family in np.unique(y_real):
         y=components[mask, 1],
         z=components[mask, 2],
         mode="markers",
-        marker=dict(
-            size=point_size,
-            opacity=0.8,
-            color=components[mask, 2] if color_by_depth else None,  # opzionale
-            colorscale="Viridis" if color_by_depth else None
-        ),
+        marker=dict(size=point_size, opacity=0.8),
         name=family
     ))
 if show_centroids:
@@ -71,7 +62,7 @@ if show_centroids:
         y=centroid_coords[:, 1],
         z=centroid_coords[:, 2],
         mode="markers",
-        marker=dict(size=centroid_size, color="red", symbol="x", opacity=1.0),
+        marker=dict(size=centroid_size, color="red", symbol="x"),
         name="Centroidi"
     ))
 fig1.update_layout(
@@ -95,12 +86,7 @@ for cluster_id in range(n_clusters):
         y=components[points_idx, 1],
         z=components[points_idx, 2],
         mode="markers",
-        marker=dict(
-            size=point_size,
-            opacity=0.8,
-            color=components[points_idx, 2] if color_by_depth else None,
-            colorscale="Viridis" if color_by_depth else None
-        ),
+        marker=dict(size=point_size, opacity=0.8),
         name=legend_name
     ))
 if show_centroids:
@@ -109,7 +95,7 @@ if show_centroids:
         y=centroid_coords[:, 1],
         z=centroid_coords[:, 2],
         mode="markers",
-        marker=dict(size=centroid_size, color="red", symbol="x", opacity=1.0),
+        marker=dict(size=centroid_size, color="red", symbol="x"),
         name="Centroidi"
     ))
 fig2.update_layout(
